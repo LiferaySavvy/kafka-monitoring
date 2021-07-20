@@ -33,7 +33,7 @@ scrape_configs:
       - targets: ['localhost:8181','localhost:8282','localhost:8383']
         labels:
           env: "kafka-dev"
-  - job_name: 'zookeepermetrics'
+  - job_name: 'zookeeper'
     static_configs:
     - targets: ['localhost:7001','localhost:7002','localhost:7003']
       labels:
